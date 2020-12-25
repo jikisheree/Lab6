@@ -1,9 +1,21 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char ans;
+    if(x =='A'){
+    	return 'Z';
+    }
+    
+    if(x<'Z' and x>'A'){
+    	ans = x-1;
+	}else{
+		ans = '0';
+	}
+    return ans;
 }
+
 
 int main(){
 	//Test Case
